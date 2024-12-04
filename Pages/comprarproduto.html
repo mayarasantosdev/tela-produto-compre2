@@ -237,20 +237,25 @@
     <main>
         <div>
             <div class="product-container">
+                <script src="../JS/thunbnails.js" defer></script>
                 <div class="product-thumb-container">
                     <div class="thumbnail-images">
-                        <img src="../src/imagens/imagem/225f5e94-7dfc-4418-a796-525a9e654ca6 2.png" alt="Urso 1">
-                        <img src="../src/imagens/imagem/Amigurumi em Casa 2.png" alt="Urso 2">
-                        <img src="../src/imagens/imagem/Miniature Crochet Animals By Mohustore 2.png" alt="Urso 3">
-                        <img src="../src/imagens/imagem/🐼🐻SOMOS OSOS AMIGURUMIS 🐼🐻 - CROCHET -  BÁSICO🐼🐻 2.png" alt="Urso 4">
-                        <img src="../src/imagens/imagem/Amigurumi_ O que é, Como Fazer e +88 Modelos Lindos (1) 1.png" alt="">
+                        <img src="../src/imagens/imagem/225f5e94-7dfc-4418-a796-525a9e654ca6 2.png" alt="urso 1" class="thumbnail" data-image="../src/imagens/imagem/225f5e94-7dfc-4418-a796-525a9e654ca6 2.png">
+                        <img src="../src/imagens/imagem/Amigurumi em Casa 2.png" alt="urso 2" class="thumbnail" 
+                        data-image="../src/imagens/imagem/Amigurumi em Casa 2.png">
+                        <img src="../src/imagens/imagem/Miniature Crochet Animals By Mohustore 2.png" alt="urso 3" class="thumbnail"
+                        data-image="../src/imagens/imagem/Miniature Crochet Animals By Mohustore 2.png">
+                        <img src="../src/imagens/imagem/🐼🐻SOMOS OSOS AMIGURUMIS 🐼🐻 - CROCHET -  BÁSICO🐼🐻 2.png" alt="urso 4" class="thumbnail" data-image="../src/imagens/imagem/🐼🐻SOMOS OSOS AMIGURUMIS 🐼🐻 - CROCHET -  BÁSICO🐼🐻 2.png">
+                        <img src="../src/imagens/imagem/Amigurumi_ O que é, Como Fazer e +88 Modelos Lindos (1) 1.png" alt="urso 5" class="thumbnail" data-image="../src/imagens/imagem/Amigurumi_ O que é, Como Fazer e +88 Modelos Lindos (1) 1.png">
                     </div>
                     <div class="image-gallery">
                         <div class="image-gallery-urso">
-                            <img src="../src/imagens/imagem/225f5e94-7dfc-4418-a796-525a9e654ca6 2.png">
+                            <img src="../src/imagens/imagem/225f5e94-7dfc-4418-a796-525a9e654ca6 2.png" id="main-image">
                         </div>
+                        <div class="zoom-result" id="zoom-result"></div>
                     </div>
                 </div>
+                <script src="../JS/thunbnails.js"></script>
                 <div class="product-details">
                     <div class="product-heading">
                         <h2 class="">Amigurumi Ursos Sem Curso</h2>
@@ -344,8 +349,8 @@
     
     <section class="related-products">
         <h2>Produtos Relacionados</h2>
-            <!-- <div class="product-carousel"> -->
-            <!-- <button class="carousel-control prev">&lt;</button> -->
+            <div class="product-carousel"> 
+            <!-- <button class="carousel-control prev">&lt;</button>  -->
             <div class="product-list">
                 <div class="product-item">
                     <img src="../src/imagens/imagem/gato-removebg-preview (1).png" alt="Amigurumi Gato">
@@ -367,20 +372,24 @@
                     <button class="buy-button">Comprar</button>
                 </div>
             </div>
-
-            <button class="carousel-control next">&gt;</button>
+            <div class="carousel-controls">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
             </div>
-        </div> 
-        <!-- <div class="carousel"> -->
-            <!-- <button class="carousel-control prev">&lt;</button> -->
-                <!-- <div class="carousel-track-container"> --> -->
-                    <!-- <ul class="carousel-track"> -->
-                 <!-- <li class="carousel-slide current"><img src="../src/imagens/imagem/galo-removebg-preview.png" alt="Slide 1"></li>
-                <li class="carousel-slide"><img src="../src/imagens/imagem/gato-removebg-preview.png" alt="Slide 2"></li>
-                <li class="carousel-slide"><img src="../src/imagens/imagem/cachorro-removebg-preview.png" alt="Slide 3"></li> --> -->
-              <!-- </ul> -->
+            <!-- <button class="carousel-control next">&gt;</button> --> -->
+        </div>
+        <script src="../JS/produtocarrosel.js"></script>
+        <!-- </div>  -->
+        <!-- <div class="carousel"> 
+            <button class="carousel-control prev">&lt;</button> 
+            <div class="carousel-track-container"> 
+                <ul class="carousel-track">
+                    <li class="carousel-slide current"><img src="../src/imagens/imagem/galo-removebg-preview.png" alt="Slide 1"></li>
+                    <li class="carousel-slide"><img src="../src/imagens/imagem/gato-removebg-preview.png" alt="Slide 2"></li>
+                    <li class="carousel-slide"><img src="../src/imagens/imagem/cachorro-removebg-preview.png" alt="Slide 3"></li> 
+                </ul>
             </div> 
-          </div>
+        </div> -->
           
     </section>
     </body>

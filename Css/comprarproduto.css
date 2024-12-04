@@ -1,10 +1,7 @@
-{
-    margin: 0
-;
-    padding: 0
-;
-    box-sizing: border-box
-;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -65,20 +62,43 @@ nav ul li a {
     /* background-color: aqua; */
     gap: 16px;
 }
+.product-thumb-container{
+    align-items: center;
+    position: relative;
+}
+
 
 .image-gallery {
     max-width: 350px;
     height: auto;
+    position: relative;
 }
 
 .image-gallery-urso {
     display: flex;
     height: auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.image-gallery-urso > img {
+.image-gallery-urso  img {
     width: 100%;
     height: fit-content;
+    transition: transform 0.3s ease;
+}
+.image-gallery-urso:hover  img{
+    transform: scale(1.2);
+}
+.zoom-result{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    right: -320px;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+
 }
 
 .image-gallery .main-image {
@@ -93,18 +113,21 @@ nav ul li a {
     gap: 10px;
     flex-direction: column;
     /* background-color: red; */
-
-
 }
-
-.thumbnail-images img {
+.thumbnail{
+    width: 80px;
+    height: 80px;
+    object-fit: pointer;
+    /* transition: border color; */
+}
+/* .thumbnail-images img {
     width: 60px;
     height: 60px;
     object-fit: cover;
     cursor: pointer;
     background-color: orange;
 
-}
+} */
 
 .product-details {
     display: flex;
@@ -341,23 +364,19 @@ body {
     margin: auto;
     overflow: hidden;
 }
-  
-  .carousel-track-container {
+.carousel-track-container {
     display: flex;
     overflow: hidden;
     width: 100%;
 }
-  
-  .carousel-track {
+.carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-  
-  .carousel-slide {
+.carousel-slide {
     min-width: 100%;
 }
-  
-  .carousel-control {
+.carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -367,15 +386,27 @@ body {
     cursor: pointer;
     z-index: 10;
 }
-  
-  .carousel-control.prev {
+.carousel-control.prev {
     left: 10px;
 }
-  
-  .carousel-control.next {
+.carousel-control.next {
     right: 10px;
 }
-  
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 1024px) {
