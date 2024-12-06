@@ -358,56 +358,36 @@ body {
     margin-top: 16px;
 }
 /* teste carrossel */
-.carousel {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-.carousel-track-container {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.carousel-slide {
-    min-width: 100%;
-}
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-}
-.carousel-control.prev {
-    left: 10px;
-}
-.carousel-control.next {
-    right: 10px;
-}
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.carousel-controls button {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
 
+button{
+    cursor: pointer;
+}
+.previos-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    font-weight: bold;
+
+    color:  #FA301E;
+    background: transparent;
+    border: 0;
+}
+.previos-button {
+    left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.next-button{
+    right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius:6px;
+
+}
 
 @media screen and (max-width: 1024px) {
     .product-container {

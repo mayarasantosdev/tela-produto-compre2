@@ -1,14 +1,23 @@
-const carousel = document.querySelector('.product-list');
-    const items = document.querySelectorAll('.product-item');
-    const totalItems = items.length;
-    let index = 0;
+const changeSlideButton = document.querySelectorAll("[data-change-slide-button]")
+changeSlideButton.forEach(button => {
+  button.addEventListener("click", () => {
+    const productlist = document.querySelector(".productlist")
+    const activeProduc = productlist.querySelector("[data-active]")
+    let indexActiveProduc = Array.from(productlist.children).indexOf(activeProduc)
 
-    document.getElementById('prev').addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : totalItems - 1;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    });
+    indexActiveProduc = button.dataset.changeProducButton === "next" 
+    ?  indexActiveProduc + 1 
+    :  indexActiveProduc - 1
 
-    document.getElementById('next').addEventListener('click', () => {
-    index = (index < totalItems - 1) ? index + 1 : 0;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    });
+    if (indexActiveProduc >= productlist.children.length) {
+      indexActiveSlide = 0
+    }
+
+    if (indexActiveProduc < 0) {
+      indexActiveProduc = productlist.children.length - 1
+    }
+
+    activeProduc.removeAttribute("data-active")
+    slides.children[indexActiveProduc].dataset.active = true
+  })
+})
