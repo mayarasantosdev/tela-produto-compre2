@@ -358,6 +358,49 @@ body {
     margin-top: 16px;
 }
 /* teste carrossel */
+/* body{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.product-carousel{
+    max-width: 1200px;
+    position: relative;
+}
+.product-carousel i{
+    top: 50%;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.product-carousel i:first-child{
+    left: -23px;
+}
+.product-carousel i:last-child{
+    right: -23px;
+}
+.product-carousel .product-list{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.product-list img{
+    height: 340;
+    object-fit: cover;
+    width: calc(100% / 3);
+
+
+} */
 
 button{
     cursor: pointer;
